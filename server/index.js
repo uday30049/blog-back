@@ -5,6 +5,7 @@ const bcrypt = require('bcryptjs');
 const dotenv = require('dotenv');
 const jwt=require('jsonwebtoken');
 const secret='adfsdafsdafsdafsda'
+const path = require("path");
 dotenv.config();
 
 const app = express();
