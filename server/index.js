@@ -13,6 +13,7 @@ const PORT = 5000;
 // Middleware
 app.use(cors());
 app.use(express.json());
+app.use(express.static(path.join(__dirname, "build")));
 
 // Connect to MongoDB
 mongoose.connect('mongodb://uk:Johnreese12@ac-8vamrsc-shard-00-00.5gtysml.mongodb.net:27017,ac-8vamrsc-shard-00-01.5gtysml.mongodb.net:27017,ac-8vamrsc-shard-00-02.5gtysml.mongodb.net:27017/?ssl=true&replicaSet=atlas-3b3cma-shard-0&authSource=admin&retryWrites=true&w=majority&appName=Cluster0', {
