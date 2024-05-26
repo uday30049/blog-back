@@ -180,5 +180,8 @@ app.get('/api/posts/:id', async (req, res) => {
     res.status(500).json({ error: 'Failed to fetch post' });
   }
 });
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
+});
 
 // ...
